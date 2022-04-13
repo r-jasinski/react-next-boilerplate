@@ -1,0 +1,27 @@
+yarn create next-app --typescript
+yarn create next-app
+cd boilerplate
+code .
+yarn dev
+tsc --init
+yarn add --dev typescript @types/react @types/node
+yarn add --dev eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest
+yarn add --dev eslint-plugin-react-hooks
+eslint src
+yarn lint
+yarn add --dev --exact pretties
+yarn add --dev eslint-config-prettier
+npx husky-init && yarn
+npx mrm@2 lint-staged
+yarn add --dev jest @babel/preset-typescript @types/jest
+yarn add --dev @testing-library/react @testing-library/jest-dom
+yarn test --watch
+yarn add --dev babel-plugin-styled-components
+yarn add --dev @types/styled-components
+yarn add styled-components
+yarn add --dev jest-styled-components
+npx sb init
+yarn upgrade-interactive --latest
+git remote add origin git@github.com:r-jasinski/react-next-boilerplate.git
+git branch -M main
+git push -u origin main
